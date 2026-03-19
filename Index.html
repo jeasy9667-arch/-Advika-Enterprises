@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Advika Enterprises | Civil Contractor</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0d1117;
+  color:white;
+}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+nav h2{color:#C9A24A;}
+nav a{
+  color:#ccc;
+  margin-left:20px;
+  text-decoration:none;
+}
+nav a:hover{color:#C9A24A}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:linear-gradient(135deg,#141b24,#1c2736);
+}
+.hero h1{
+  font-size:3rem;
+}
+.hero span{color:#C9A24A;}
+.hero p{margin-top:10px;color:#aaa}
+
+/* BUTTON */
+.btn{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  background:#C9A24A;
+  color:black;
+  cursor:pointer;
+  border-radius:5px;
+  font-weight:bold;
+}
+.btn:hover{background:#e4c77c}
+
+/* SECTION */
+section{
+  padding:80px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:#C9A24A;
+}
+
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:25px;
+  border-radius:10px;
+  backdrop-filter:blur(5px);
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-8px);
+  background:rgba(255,255,255,0.08);
+}
+
+/* CONTACT */
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  background:#1c2736;
+  border:none;
+  color:white;
+  border-radius:5px;
+}
+button{
+  width:100%;
+  padding:12px;
+  margin-top:15px;
+  background:#C9A24A;
+  border:none;
+  border-radius:5px;
+  font-weight:bold;
+}
+button:hover{background:#e4c77c}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111;
+  color:#aaa;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:15px;
+  border-radius:50%;
+  font-size:22px;
+  color:white;
+  text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h2>Advika</h2>
+<div>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<div>
+<h1>Building <span>Rajasthan</span> Infrastructure</h1>
+<p>JVVNL Registered Civil Contractor</p>
+<button class="btn" onclick="scrollToSection()">Explore Services</button>
+</div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+<h2>Our Services</h2>
+
+<div class="grid">
+<div class="card">🏗️ Civil Construction</div>
+<div class="card">⚡ Electrical Infrastructure</div>
+<div class="card">🛣️ Road Work</div>
+<div class="card">🏢 Building Construction</div>
+<div class="card">🔧 Repair & Maintenance</div>
+<div class="card">📐 Excavation Work</div>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Us</h2>
+
+<input placeholder="Your Name">
+<input placeholder="Phone Number">
+<textarea placeholder="Your Message"></textarea>
+
+<button onclick="sendMsg()">Send Enquiry</button>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2025 Advika Enterprises | Rajasthan
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">💬</a>
+
+<script>
+function scrollToSection(){
+  document.getElementById("services").scrollIntoView({behavior:'smooth'});
+}
+function sendMsg(){
+  alert("Enquiry Sent Successfully 🚀");
+}
+</script>
+
+</body>
+</html>
